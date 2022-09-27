@@ -6,6 +6,7 @@
 		{{ range .Site.Menus.main }}
 		<a href="{{ .URL }}">{{ .Name }}</a>
 		{{ end }}
+		<a href="https://github.com/jf-delineate">about</a>
 		{{ if eq .Site.Params.mode "toggle" -}}
         | <a id="dark-mode-toggle" onclick="toggleTheme()" href=""></a>
 		<script src="{{ .Site.BaseURL }}js/themetoggle.js"></script>
